@@ -9,13 +9,12 @@
 </div>
 
 <div class=container>
+<h1>Here are the following trees that people that reviewed:</h1>
   <div class='row'>
-
-  <div id="trees">
-    {{#each model as |tree|}}
-      <hr>
-      {{tree-tile tree=tree update="update" destroyPost="destroyPost"}}
-    {{/each}}
+    <div id="trees">
+      {{#each model as |tree|}}
+        {{tree-tile tree=tree update="update" destroyPost="destroyPost"}}
+      {{/each}}
+    </div>
   </div>
-</div>
 </div>

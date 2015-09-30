@@ -6,6 +6,13 @@ export default Ember.Route.extend({
   },
 
   actions: {
+    save3(params) {
+      var newPost = this.store.createRecord('tree', params);
+      newPost.save();
+      this.transitionTo('index');
+    },
+  }
+});
     // saveReview(params) {
     //   var newReview = this.store.createRecord('comment', params);
     //   newReview.save();
@@ -15,11 +22,6 @@ export default Ember.Route.extend({
     //   this.transitionTo('tree', params.tree.id);
     // },
 
-    save3(params) {
-      var newPost = this.store.createRecord('tree', params);
-      newPost.save();
-      this.transitionTo('index');
-    },
 
     // update(tree, params) {
     //   Object.keys(params).forEach(function(key) {
@@ -35,5 +37,3 @@ export default Ember.Route.extend({
     //   tree.destroyRecord();
     //   this.transitionTo('index');
     // }
-  }
-});
