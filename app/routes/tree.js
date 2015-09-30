@@ -2,13 +2,13 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-    return this.store.findRecord('post', params.tree_id);
+    return this.store.findRecord('tree', params.tree_id);
   },
 
   actions: {
     save3(params) {
-      var newPost = this.store.createRecord('tree', params);
-      newPost.save();
+      var newTree = this.store.createRecord('tree', params);
+      newTree.save();
       this.transitionTo('index');
     },
   }
