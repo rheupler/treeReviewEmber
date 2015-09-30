@@ -1,1 +1,39 @@
 {{outlet}}
+
+<div class='container'>
+
+<div class='row'>
+  <div class='col-md-6'>
+    <h2>Welcome to trees company</h2>
+  </div>
+  <div class='col-md-6'>
+
+  </div>
+</div>
+</div>
+
+<div class='navbar navbar-inverse navbar-fixed-bottom'>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
+</div>
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <form class='form-group'>
+      <h2>Enter a new tree</h2>
+        <input placeholder='Name' type="text" class='form-control'>
+        <br>
+        <input placeholder='Type' type="text" class='form-control'>
+        <br>
+        <input placeholder='Address' id='address' type="text" class='form-control'>
+        <br>
+        {{input placeholder='Comments' type="text" class='form-control'}}
+        <br>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Save changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
