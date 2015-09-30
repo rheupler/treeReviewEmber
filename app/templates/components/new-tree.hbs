@@ -1,15 +1,26 @@
 {{yield}}
 
 
-
-
-<!-- Large modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
-
 <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-      <h2>testing</h2>
+      <form class='form-group'>
+      <h2>Enter a new tree</h2>
+        {{input value=name placeholder='Name' type="text" class='form-control'}}
+        <br>
+        {{input value=type placeholder='Type' type="text" class='form-control'}}
+        <br>
+        {{input value=address placeholder='Address' type="text" class='form-control'}}
+        <br>
+        {{input value=comments placeholder='Comments' type="text" class='form-control'}}
+        <br>
+        {{input value=image placeholder='Image URL' type="text" class='form-control'}}
+        <br>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <button type="button" {{action "save1"}} class="btn btn-success">Save changes</button>
+        </div>
+      </form>
     </div>
   </div>
 </div>

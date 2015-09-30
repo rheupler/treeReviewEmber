@@ -4,6 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'treeview',
     environment: environment,
+    firebase: 'https://treeview.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
