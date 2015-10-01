@@ -19,3 +19,51 @@
 body {
   padding-bottom: 100px;
 }
+
+.map-display {
+  height: 600px;
+  width: 600px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  height: 100%;
+}
+
+#floating-panel {
+/*position: absolute;*/
+top: 10px;
+left: 25%;
+z-index: 5;
+background-color: #fff;
+padding: 5px;
+border: 1px solid #999;
+text-align: center;
+font-family: 'Roboto','sans-serif';
+line-height: 30px;
+padding-left: 10px;
+}
+
+#girls{
+
+19 chelsea my first
+20 sam
+angel
+kate
+victoria
+
+jess
+hannah
+helene
+26 caroline
+27 sara tinder fling
+
+20 chelsia
+diana
+
+}
