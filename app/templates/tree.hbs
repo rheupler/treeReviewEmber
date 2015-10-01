@@ -5,7 +5,13 @@
   <div class='container'>
     <ul class="nav nav-tabs">
       <li role="presentation"><a href="/">Home</a></li>
-      <li role="presentation" class="active"><a href="tree">Trees</a></li>
+      <li role="presentation" class="active"><a href="tree">Tree</a></li>
     </ul>
   </div>
+</div>
+<div class='col-md-6'>
+  <h2>{{model.name}}</h2>
+    <p><span>Type: {{model.type}}</span></p>
+    <p><span>This tree is located at {{model.address}}</span></p>
+  <p><img src={{model.image}} width="200px" height='200px'/></p>
 </div>
